@@ -28,14 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.LogoTimer = new System.Windows.Forms.Timer(this.components);
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
+            // 
+            // LogoTimer
+            // 
+            this.LogoTimer.Enabled = true;
+            this.LogoTimer.Interval = 3000;
+            this.LogoTimer.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(500, 296);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(100, 23);
+            this.progressBar1.Step = 50;
+            this.progressBar1.TabIndex = 0;
+            this.progressBar1.Value = 100;
             // 
             // SplashForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::COMP123_S2016_FinalExam.Properties.Resources.splashSceen;
-            this.ClientSize = new System.Drawing.Size(284, 265);
+            this.ClientSize = new System.Drawing.Size(600, 320);
+            this.ControlBox = false;
+            this.Controls.Add(this.progressBar1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "SplashForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashForm";
@@ -44,5 +67,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer LogoTimer;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }

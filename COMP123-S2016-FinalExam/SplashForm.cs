@@ -16,5 +16,14 @@ namespace COMP123_S2016_FinalExam
         {
             InitializeComponent();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            progressBar1.Increment(0);
+            if (progressBar1.Value == 100)
+                LogoTimer.Stop();
+        }
+
+       
     }
 }
