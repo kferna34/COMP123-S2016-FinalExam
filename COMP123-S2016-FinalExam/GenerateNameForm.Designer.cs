@@ -242,6 +242,7 @@
             this.FirstNameListBox.Size = new System.Drawing.Size(152, 94);
             this.FirstNameListBox.Sorted = true;
             this.FirstNameListBox.TabIndex = 0;
+            this.FirstNameListBox.SelectedIndexChanged += new System.EventHandler(this.FirstNameListBox_SelectedIndexChanged);
             // 
             // NextButton
             // 

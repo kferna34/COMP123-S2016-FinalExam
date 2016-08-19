@@ -50,5 +50,10 @@ namespace COMP123_S2016_FinalExam
             finalForm.Show();
             this.Hide();
         }
+
+        private void RaceGroupBox_Enter(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

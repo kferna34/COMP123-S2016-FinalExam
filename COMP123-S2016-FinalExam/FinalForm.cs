@@ -47,20 +47,19 @@ namespace COMP123_S2016_FinalExam
         {
             Character Informations = new Character();
 
-            Informations.listInfo = this;
+            Program.character.LastName = this.LastNameTextBox.Text;//passes the title to the order form  
+            Program.character.FirstName = this.FirstNameTextBox.Text;//passes the category to the order form
+            Program.character.Strength = this.StrengthTextBox.Text;//passes the cost to the order form
+            Program.character.Dexterity = this.DexterityTextBox.Text;
+            Program.character.Constitution = this.ConstitutionTextBox.Text;
+            Program.character.Intelligence = this.IntelligenceTextBox.Text;
+            Program.character.Wisdom = this.WisdomTextBox.Text;
+            Program.character.Charisma = this.CharismaTextBox.Text;
+            Program.character.Race = this.raceTextBox.Text;
 
-            listInfo.LastName = this.LastNameTextBox.Text;//passes the title to the order form  
-            listInfo.FirstName = this.FirstNameTextBox.Text;//passes the category to the order form
-            listInfo.Strength = this.StrengthTextBox.Text;//passes the cost to the order form
-            listInfo.Dexterity = this.DexterityTextBox.Text;
-            listInfo.Constitution = this.ConstitutionTextBox.Text;
-            listInfo.Intelligence = this.IntelligenceTextBox.Text;
-            listInfo.Wisdom = this.WisdomTextBox.Text;
-            listInfo.Charisma = this.CharismaTextBox.Text;
-            listInfo.Race = this.raceTextBox.Text;
             
             
-            this.Hide();
+
         }
     }
 }

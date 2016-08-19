@@ -15,16 +15,21 @@ namespace COMP123_S2016_FinalExam
     {
         public GenerateNameForm()
         {
-            
+
             InitializeComponent();
-            
+
         }
-        
+
         private void NextButton_Click(object sender, EventArgs e)
         {
-            AbilityGeneratorForm NavToAbilityGen = new AbilityGeneratorForm();//sends the user to the stream form 
+            AbilityGeneratorForm NavToAbilityGen = new AbilityGeneratorForm();
             NavToAbilityGen.Show();
             this.Hide();
+        }
+
+        private void FirstNameListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -62,13 +62,14 @@
             this.RaceGroupBox.TabIndex = 5;
             this.RaceGroupBox.TabStop = false;
             this.RaceGroupBox.Text = "Select Race";
+            this.RaceGroupBox.Enter += new System.EventHandler(this.RaceGroupBox_Enter);
             // 
             // HalflingRadioButton
             // 
             this.HalflingRadioButton.AutoSize = true;
             this.HalflingRadioButton.Location = new System.Drawing.Point(6, 120);
             this.HalflingRadioButton.Name = "HalflingRadioButton";
-            this.HalflingRadioButton.Size = new System.Drawing.Size(87, 22);
+            this.HalflingRadioButton.Size = new System.Drawing.Size(83, 22);
             this.HalflingRadioButton.TabIndex = 5;
             this.HalflingRadioButton.Text = "Halfling";
             this.HalflingRadioButton.UseVisualStyleBackColor = true;
@@ -79,7 +80,7 @@
             this.DwarfRadioButton.AutoSize = true;
             this.DwarfRadioButton.Location = new System.Drawing.Point(6, 92);
             this.DwarfRadioButton.Name = "DwarfRadioButton";
-            this.DwarfRadioButton.Size = new System.Drawing.Size(70, 22);
+            this.DwarfRadioButton.Size = new System.Drawing.Size(72, 22);
             this.DwarfRadioButton.TabIndex = 4;
             this.DwarfRadioButton.Text = "Dwarf";
             this.DwarfRadioButton.UseVisualStyleBackColor = true;

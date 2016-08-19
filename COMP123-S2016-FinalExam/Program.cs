@@ -4,6 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * Name: Krytia Fernandez
+ * App: Generator
+ * date: 08-19-2016
+ */
 namespace COMP123_S2016_FinalExam
 {
     public static class Program
