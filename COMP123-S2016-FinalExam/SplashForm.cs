@@ -19,9 +19,14 @@ namespace COMP123_S2016_FinalExam
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            progressBar1.Increment(0);
+            LogoTimer.Enabled = false;
+            progressBar1.Increment(1);
             if (progressBar1.Value == 100)
                 LogoTimer.Stop();
+            GenerateNameForm generateNameForm = new GenerateNameForm();
+            generateNameForm.Show();
+            this.Hide();
+            
         }
 
        

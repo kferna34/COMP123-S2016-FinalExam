@@ -53,9 +53,9 @@
             this.LastNameLabel2 = new System.Windows.Forms.Label();
             this.LastNameTextBox = new System.Windows.Forms.TextBox();
             this.FirstNameLabel2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.FirstNameTextBox = new System.Windows.Forms.TextBox();
             this.RaceLabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.raceTextBox = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.AbilityGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -83,12 +83,12 @@
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(89, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -283,7 +283,7 @@
             this.LastNameLabel2.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LastNameLabel2.Location = new System.Drawing.Point(340, 33);
             this.LastNameLabel2.Name = "LastNameLabel2";
-            this.LastNameLabel2.Size = new System.Drawing.Size(88, 18);
+            this.LastNameLabel2.Size = new System.Drawing.Size(87, 18);
             this.LastNameLabel2.TabIndex = 11;
             this.LastNameLabel2.Text = "Last Name";
             // 
@@ -305,13 +305,13 @@
             this.FirstNameLabel2.TabIndex = 9;
             this.FirstNameLabel2.Text = "First Name";
             // 
-            // textBox1
+            // FirstNameTextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(168, 54);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 26);
-            this.textBox1.TabIndex = 8;
+            this.FirstNameTextBox.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstNameTextBox.Location = new System.Drawing.Point(168, 54);
+            this.FirstNameTextBox.Name = "FirstNameTextBox";
+            this.FirstNameTextBox.Size = new System.Drawing.Size(152, 26);
+            this.FirstNameTextBox.TabIndex = 8;
             // 
             // RaceLabel
             // 
@@ -319,17 +319,17 @@
             this.RaceLabel.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RaceLabel.Location = new System.Drawing.Point(168, 127);
             this.RaceLabel.Name = "RaceLabel";
-            this.RaceLabel.Size = new System.Drawing.Size(46, 18);
+            this.RaceLabel.Size = new System.Drawing.Size(43, 18);
             this.RaceLabel.TabIndex = 13;
             this.RaceLabel.Text = "Race";
             // 
-            // textBox2
+            // raceTextBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(168, 148);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(152, 26);
-            this.textBox2.TabIndex = 12;
+            this.raceTextBox.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.raceTextBox.Location = new System.Drawing.Point(168, 148);
+            this.raceTextBox.Name = "raceTextBox";
+            this.raceTextBox.Size = new System.Drawing.Size(152, 26);
+            this.raceTextBox.TabIndex = 12;
             // 
             // FinalForm
             // 
@@ -339,11 +339,11 @@
             this.ClientSize = new System.Drawing.Size(504, 481);
             this.ControlBox = false;
             this.Controls.Add(this.RaceLabel);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.raceTextBox);
             this.Controls.Add(this.LastNameLabel2);
             this.Controls.Add(this.LastNameTextBox);
             this.Controls.Add(this.FirstNameLabel2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.FirstNameTextBox);
             this.Controls.Add(this.AbilityGroupBox);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.BackButton);
@@ -353,6 +353,7 @@
             this.Name = "FinalForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Final Form";
+            this.Load += new System.EventHandler(this.FinalForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.AbilityGroupBox.ResumeLayout(false);
@@ -374,23 +375,23 @@
         protected System.Windows.Forms.Button BackButton;
         protected System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.GroupBox AbilityGroupBox;
-        private System.Windows.Forms.TextBox CharismaTextBox;
         private System.Windows.Forms.Label CharismaLabel;
-        private System.Windows.Forms.TextBox WisdomTextBox;
         private System.Windows.Forms.Label WisdomLabel;
-        private System.Windows.Forms.TextBox IntelligenceTextBox;
         private System.Windows.Forms.Label IntelligenceLabel;
-        private System.Windows.Forms.TextBox ConstitutionTextBox;
         private System.Windows.Forms.Label ConstitutionLabel;
-        private System.Windows.Forms.TextBox DexterityTextBox;
         private System.Windows.Forms.Label DexterityLabel;
-        private System.Windows.Forms.TextBox StrengthTextBox;
         private System.Windows.Forms.Label StrengthLabel;
         private System.Windows.Forms.Label LastNameLabel2;
-        private System.Windows.Forms.TextBox LastNameTextBox;
         private System.Windows.Forms.Label FirstNameLabel2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label RaceLabel;
-        private System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox CharismaTextBox;
+        public System.Windows.Forms.TextBox WisdomTextBox;
+        public System.Windows.Forms.TextBox IntelligenceTextBox;
+        public System.Windows.Forms.TextBox ConstitutionTextBox;
+        public System.Windows.Forms.TextBox DexterityTextBox;
+        public System.Windows.Forms.TextBox StrengthTextBox;
+        public System.Windows.Forms.TextBox LastNameTextBox;
+        public System.Windows.Forms.TextBox FirstNameTextBox;
+        public System.Windows.Forms.TextBox raceTextBox;
     }
 }

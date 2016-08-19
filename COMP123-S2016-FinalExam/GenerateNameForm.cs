@@ -15,17 +15,16 @@ namespace COMP123_S2016_FinalExam
     {
         public GenerateNameForm()
         {
-            //showing the logo
-            Thread LogoScreen = new Thread(new ThreadStart(SplashForm));
-            LogoScreen.Start();
-            Thread.Sleep(1000);
+            
             InitializeComponent();
-            LogoScreen.Abort();// close the logo
+            
         }
-        public void SplashForm()
+        
+        private void NextButton_Click(object sender, EventArgs e)
         {
-            Application.Run(new SplashForm());
+            AbilityGeneratorForm NavToAbilityGen = new AbilityGeneratorForm();//sends the user to the stream form 
+            NavToAbilityGen.Show();
+            this.Hide();
         }
-
     }
 }
